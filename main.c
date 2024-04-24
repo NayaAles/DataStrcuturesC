@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "lab_1/lab_1.h"
 
 //typedef struct Node {
 //    int data;
@@ -86,7 +87,11 @@ char Pop(Stack *S) {
     return x;
 }
 
-int main(void) {
+int main() {
+    lab_1();
+}
+//int main(void) {
+//    lab_1();
 //    Stack S;
 //    InitStack(&S);
 //
@@ -99,24 +104,24 @@ int main(void) {
 //    printf("Pop: %c\n", Pop(&S)); // a
 //    printf("Pop: %c\n", Pop(&S)); // Стек пуст
 
-    Stack S = {NULL, NULL};
-    Push(&S, 10);
-    Push(&S, 20);
-    Push(&S, 30);
-
-    // Вывод списка для проверки
-    Node* current = S.Head;
-    while (current != NULL) {
-        printf("%d ", current->data);
-        current = current->next;
-    }
-    printf("\n");
-
-    printf("Pop: %d\n", Pop(&S)); // 30
-    printf("Pop: %d\n", Pop(&S)); // 20
-    printf("Pop: %d\n", Pop(&S)); // 10
-    printf("Pop: %c\n", Pop(&S)); // Стек пуст
-
-    return 0;
-}
+//    Stack S = {NULL, NULL};
+//    Push(&S, 10);
+//    Push(&S, 20);
+//    Push(&S, 30);
+//
+//    // Вывод списка для проверки
+//    Node* current = S.Head;
+//    while (current != NULL) {
+//        printf("%d ", current->data);
+//        current = current->next;
+//    }
+//    printf("\n");
+//
+//    printf("Pop: %d\n", Pop(&S)); // 30
+//    printf("Pop: %d\n", Pop(&S)); // 20
+//    printf("Pop: %d\n", Pop(&S)); // 10
+//    printf("Pop: %c\n", Pop(&S)); // Стек пуст
+//
+//    return 0;
+//}
 
