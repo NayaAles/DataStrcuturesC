@@ -18,6 +18,8 @@ Slice append(Slice slice, int item);
 
 Slice insert(Slice slice, int item, int position);
 
+Slice removeItem(Slice slice, int position);
+
 void print(Slice slice);
 void lab_1();
 
